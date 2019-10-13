@@ -1,0 +1,43 @@
+<div *ngIf="authRequired">
+    <h3>Login</h3>
+    <label>Email</label>
+    <input type="text" [(ngModel)]="logEmail">
+    <label>Password</label>
+    <input type="password" [(ngModel)]="logPassword">
+    <button id="loginButton" type="button" (click)="login()">Login</button>
+    <hr>
+
+        <h3>Register</h3>
+
+        <label>Email</label>
+        <input type="text" [(ngModel)]="regEmail">
+        <label>Password</label>
+        <input type="password" [(ngModel)]="regPassword">
+        <label>Confirm Password</label>
+        <input type="password" [(ngModel)]="regPasswordConfirm">
+        <button id="registerButton" type="button" (click)="register()">Register</button>
+</div>
+<div>
+    <button (click)="logout()">Log out</button>
+    <p>*command /stock= stock_code available</p>
+    <div class="col-sm-3 col-sm-offset-4 frame" style="max-width: 100%!important;">
+        <ul>
+            <ul id="messagesList"></ul>
+
+        </ul>
+        <div>
+
+            <!-- <div > -->
+            <!-- <div  style="background:whitesmoke !important"> -->
+            <input style="visibility: collapse;" id="userInput" placeholder="Type a message" />
+            <input [(ngModel)]="message" id="messageInput" class="msj-rta macro" placeholder="Type a message" />
+            <!-- </div> -->
+
+            <!-- </div> -->
+            <div style="padding:10px;">
+                <button id="sendButton" type="button" class="btn" (click)="sendMessage()">Send</button>
+            </div>
+
+        </div>
+    </div>
+</div>
