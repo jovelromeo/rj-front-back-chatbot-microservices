@@ -1,11 +1,11 @@
-# Romeo Jovel Chat
+# RJ ChatBot
 
 This consists of 3 projects (2 net core and 1 angular).
 The two net core api's use RabbitMQ as message broker.
 
 ## Run the project
 
-RabbitMQ should be running in localhost (this can be changed in appsettings,json in each project);
+RabbitMQ should be running in localhost (this can be changed in appsettings.json in each project);
 Also have the .net core 3.0 (https://dotnet.microsoft.com/download/dotnet-core/3.0) installed.
 1. Open cmd o bash and start the bot with: 
 $ cd romeojovelchatbot && dotnet restore && dotnet run --launch-profile dev
